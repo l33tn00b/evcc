@@ -56,6 +56,13 @@ cd <source dir>
 go build ./...
 ```
 
+Producing packages for release will require installing goreleaser:
+```
+go install github.com/goreleaser/goreleaser@latest
+```
+At least on RaspberryPi OS, do not go for the installation via repository. This will try to install an old version if Go (because of dependencies).
+
+
 For frontend development start the Vue toolchain in dev-mode. Open http://127.0.0.1:7071/ to get to the livelreloading development server. It pulls its data from port 7070 (see above).
 
 ```sh
