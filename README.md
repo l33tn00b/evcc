@@ -1,7 +1,7 @@
 # evcc 🚘☀️
 
 Fork removing Sponsor Token requirement for go-e charger introduced Nov 2022. 
-I strongly disagree with breaking existing installations by pushing this via the release.
+I strongly disagree with breaking existing installations by pushing this via the release. Although I do understand the need for funding... 
 
 evcc is an extensible EV Charge Controller with PV integration implemented in [Go][2]. Featured in [PV magazine](https://www.pv-magazine.de/2021/01/15/selbst-ist-der-groeoenlandhof-wallbox-ladesteuerung-selbst-gebaut/).
 
