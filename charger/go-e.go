@@ -76,7 +76,9 @@ func NewGoE(uri, token string, cache time.Duration) (api.Charger, error) {
 	} else {
 		c.api = goe.NewLocal(log, util.DefaultScheme(uri, "http"), cache)
 	}
-
+	// https://github.com/evcc-io/evcc/pull/5119/commits/f04cf7b18cb47733e4aba488d3e734e264c300cc
+	// Sponsor fix. Never should you break existing installations by rolling out
+	// feature restrictions. 
 	//if !sponsor.IsAuthorized() {
 	//	return nil, api.ErrSponsorRequired
 	//}
