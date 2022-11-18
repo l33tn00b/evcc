@@ -1,14 +1,5 @@
 # evcc 🚘☀️
 
-[![Build Status](https://github.com/evcc-io/evcc/workflows/Build/badge.svg)](https://github.com/evcc-io/evcc/actions?query=workflow%3ABuild)
-[![Code Quality](https://goreportcard.com/badge/github.com/evcc-io/evcc)](https://goreportcard.com/report/github.com/evcc-io/evcc)
-[![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20VS%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/evcc-io/evcc)
-[![OSS hosting by cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith)](https://cloudsmith.io/~evcc/packages/)
-[![Latest Version](https://img.shields.io/github/release/evcc-io/evcc.svg)](https://github.com/evcc-io/evcc/releases)
-
-<!-- [![Pulls from Docker Hub](https://img.shields.io/docker/pulls/andig/evcc.svg)](https://hub.docker.com/r/andig/evcc) -->
-<!-- [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=48YVXXA7BDNC2) -->
-
 Fork removing Sponsor Token requirement for go-e charger introduced Nov 2022. 
 I strongly disagree with breaking existing installations by pushing this via the release.
 
@@ -49,6 +40,8 @@ You'll find everything you need in our [documentation](https://docs.evcc.io/) (G
 ## Contribute
 
 To build evcc from source, [Go][2] 1.18 and [Node][3] 18 are required.
+Installation instructions for Go can be found at https://www.e-tinkers.com/2019/06/better-way-to-install-golang-go-on-raspberry-pi/.
+You will have to remove any existing Go installations before re-installing. Thoroughly delete anything Go-related. 
 
 Build and run go backend. The UI becomes available at http://127.0.0.1:7070/
 
