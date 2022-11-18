@@ -50,6 +50,12 @@ make
 ./evcc
 ```
 
+Before running above make command, you may want to check the build:
+```
+cd <source dir>
+go build ./...
+```
+
 For frontend development start the Vue toolchain in dev-mode. Open http://127.0.0.1:7071/ to get to the livelreloading development server. It pulls its data from port 7070 (see above).
 
 ```sh
