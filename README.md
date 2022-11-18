@@ -56,11 +56,18 @@ cd <source dir>
 go build ./...
 ```
 
-Producing packages for release will require installing goreleaser:
+Producing packages for release will require installing goreleaser. There's lots of dependencies to be installed for goreleaser to run. You might run out of disk space when doing this on a smallish SD card on a Raspberry. 
 ```
 go install github.com/goreleaser/goreleaser@latest
 ```
 At least on RaspberryPi OS, do not go for the installation via repository. This will try to install an old version if Go (because of dependencies).
+
+Manual install can be done by executing from the compile directory:
+```
+sudo cp evcc /usr/bin
+sudo cp packaging/init/evcc.service /lib/systemd/system
+sudo systemctl enable evcc
+```
 
 
 For frontend development start the Vue toolchain in dev-mode. Open http://127.0.0.1:7071/ to get to the livelreloading development server. It pulls its data from port 7070 (see above).
