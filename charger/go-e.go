@@ -25,7 +25,8 @@ import (
 	"github.com/evcc-io/evcc/api"
 	goe "github.com/evcc-io/evcc/charger/go-e"
 	"github.com/evcc-io/evcc/util"
-	"github.com/evcc-io/evcc/util/sponsor"
+	// remove import, go will treat this as an error (imported but not used) 
+	//"github.com/evcc-io/evcc/util/sponsor"
 )
 
 // https://go-e.co/app/api.pdf
