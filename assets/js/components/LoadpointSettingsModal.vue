@@ -152,7 +152,7 @@
 								</div>
 							</div>
 
-							<div v-if="$hiddenFeatures" class="mb-3 row">
+							<div class="mb-3 row">
 								<label
 									:for="formId('maxcurrent')"
 									class="col-sm-4 col-form-label pt-0 pt-sm-2"
