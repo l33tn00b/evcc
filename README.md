@@ -79,7 +79,7 @@ npm run start
 
 But before:
 ```
-sudo apt-get install npm
+curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
 sudo npm i vite
 ```
 
