@@ -70,11 +70,17 @@ sudo systemctl enable evcc
 ```
 
 
-For frontend development start the Vue toolchain in dev-mode. Open http://127.0.0.1:7071/ to get to the livelreloading development server. It pulls its data from port 7070 (see above).
+For frontend development (i.e. you intend to/did change web frontend code) start the Vue toolchain in dev-mode. Open http://127.0.0.1:7071/ to get to the livelreloading development server. It pulls its data from port 7070 (see above).
 
 ```sh
 npm install
 npm run start
+```
+
+But before:
+```
+sudo apt-get install npm
+sudo npm i vite
 ```
 
 ### Code formatting
