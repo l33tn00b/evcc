@@ -100,6 +100,14 @@ To ensure reproducability the build frontend artifacts are part of the source co
 make ui
 ```
 
+Before, you need to 
+```
+sudo apt-get install npm
+sudo npm i vite
+```
+
+Caveat: Won't work on Debian Bullseye. npm version for vite needs to be >8.0.0, node >18.0.0 (is: 7.5.2, 12.22.12).
+
 ### Changing templates
 
 evcc supports a massive amount of different devices. To keep our documentation and website in sync with the latest software the core project (this repo) generates meta-data that's pushed to the `docs` and `evcc.io` repository. Make sure to update this meta-data every time you make changes to a templates.
