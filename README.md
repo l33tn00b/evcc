@@ -2,6 +2,24 @@
 
 Fork removing Sponsor Token requirement for go-e charger introduced Nov 2022. 
 I strongly disagree with breaking existing installations by pushing this via the release. Although I do understand the need for funding... 
+Hidden features enabled.
+
+Changes to:
+- charger/go-e.go: remove sponsor import and
+  ```  
+  // https://github.com/evcc-io/evcc/pull/5119/commits/f04cf7b18cb47733e4aba488d3e734e264c300cc
+	// Sponsor fix. Never should you break existing installations by rolling out
+	// feature restrictions. 
+	//if !sponsor.IsAuthorized() {
+	//	return nil, api.ErrSponsorRequired
+	//}
+
+  ```
+- assets/js/featureflags.js
+  ```
+      // app.config.globalProperties.$hiddenFeatures = window.localStorage["hidden_features"] === "true";
+    app.config.globalProperties.$hiddenFeatures = true;
+  ```
 
 evcc is an extensible EV Charge Controller with PV integration implemented in [Go][2]. Featured in [PV magazine](https://www.pv-magazine.de/2021/01/15/selbst-ist-der-groeoenlandhof-wallbox-ladesteuerung-selbst-gebaut/).
 
