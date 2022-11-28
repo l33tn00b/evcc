@@ -51,8 +51,10 @@ const (
 	minActiveCurrent      = 1.0 // minimum current at which a phase is treated as active
 	vehicleDetectInterval = 1 * time.Minute
 	vehicleDetectDuration = 10 * time.Minute
-
-	guardGracePeriod = 10 * time.Second // allow out of sync during this timespan
+	// extend permissible out of sync timespan
+	// from 10 to 60 (so we have ample time to disable evcc
+	// via API if charger was manually activated)
+	guardGracePeriod = 60 * time.Second // allow out of sync during this timespan
 )
 
 // elapsed is the time an expired timer will be set to
